@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(
+    to left,
+    rgba(3, 171, 205, 0.639) 0%,
+    rgba(47, 13, 241, 0.518) 100%
+  );
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+form div {
+  margin-bottom: 17px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: rgba(240, 248, 255, 0.158);
+  background: rgba(237, 234, 234, 0.441);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+button {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: rgba(240, 248, 255, 0.158);
+  background: rgba(237, 234, 234, 0.441);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+button:active {
+  transform: scale(0.75);
+}

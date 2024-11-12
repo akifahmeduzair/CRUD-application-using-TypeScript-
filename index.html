@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee CRUD Operations</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h2>Employee Details</h2>
+    <form id="employeeDetailForm" onsubmit="onFormSubmit(event)">
+      <div>
+        <label for="employeeName">Employee Name</label>
+        <input type="text" name="employeeName" id="employeeName" required />
+      </div>
+
+      <div>
+        <label for="employeeEmail">Employee Email</label>
+        <input type="email" name="employeeEmail" id="employeeEmail" required />
+      </div>
+
+      <div>
+        <label for="employeePhone">Employee Phone Number</label>
+        <input type="number" name="employeePhone" id="employeePhone" required />
+      </div>
+
+      <div>
+        <button>Submit</button>
+        <button>Reset</button>
+      </div>
+    </form>
+
+    <div style="display: grid; justify-content: right">
+      <button type="button" onclick="toggleForm()">Add Row</button>
+    </div>
+
+    <table class="list" id="employeeList">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Employee Name</th>
+          <th>Employee Email</th>
+          <th>Employee Phone no.</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Dynamic rows go here -->
+      </tbody>
+    </table>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
